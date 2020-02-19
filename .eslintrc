@@ -1,0 +1,7 @@
+{
+  "root": true,
+  "extends": ["warp/node", "warp/module"],
+  "rules": {
+    "no-console": "off"
+  }
+}
