@@ -24,7 +24,9 @@ Not made to be used in production. Use at your own risk.
 Install warp-proxy using [`npm`](https://www.npmjs.com/):
 
 ```bash
-npm install -g warp-proxy
+npm install warp-proxy # globally accessible
+
+npm install warp-proxy --save-dev # only accessible via npm package.json commands
 ```
 
 ## Usage
