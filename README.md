@@ -43,8 +43,7 @@ npx warp-proxy start --port 6543 --target http://mydesiredserver:1234
 ```
 
 ## Configuration
-You can pass a custom configuration via `--config` argument. 
-The following properties are also availabe via cli arguments.
+Using the `run` command you can pass a custom configuration via `--config` argument.
 
 ```js
 module.exports = {
