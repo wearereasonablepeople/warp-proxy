@@ -94,7 +94,7 @@ in second example
 ```c#
 [PUT] http://address:1234/language/countries/`
 └───────────────────────┘ └──────┘ └───────┘
-   root folder + /GET/   | FOLDER |JSON FILE
+   root folder + /PUT/   | FOLDER |JSON FILE
 ```
 
 your folder structure should look like this
