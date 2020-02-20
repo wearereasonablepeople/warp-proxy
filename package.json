@@ -19,7 +19,7 @@
   "bin": {
     "warp-proxy": "./lib/cli.js"
   },
-  "author": "",
+  "author": "Renan Borges <me@renan.ninja>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wearereasonablepeople/warp-proxy/issues"

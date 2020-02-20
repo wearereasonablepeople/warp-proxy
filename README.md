@@ -14,10 +14,10 @@
 </p>
 
 ## Description
-A simple command line to quickly start a web server which proxy your requests to an external server or to local files (JSON).
+A simple command line to quickly start a web server which proxys your requests to an external server or to local files (JSON).
 Very helpful for testing and development.
 
-Not made to be used in production.
+Not made to be used in production. Use at your own risk.
 
 ## Getting Started
 
@@ -35,6 +35,9 @@ warp-proxy web --port 6543 --target http://mydesiredserver:1234
 # Proxing all request to local json files
 warp-proxy mock --port 6543 --directory ./mymocksfolder/
 
+# Using a config.js file
+warp-proxy run --config ./proxy-config.js
+
 # Using npx, you don't even need to install the package
 npx warp-proxy start --port 6543 --target http://mydesiredserver:1234
 ```
@@ -45,7 +48,9 @@ The following properties are also availabe via cli arguments.
 
 ```js
 module.exports = {
+  mode: 'web', // or 'mock'
   port: 1234,
+
   // Proxying external servers
   target: 'http://mydesiredserver:1234',
 
