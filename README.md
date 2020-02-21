@@ -5,8 +5,8 @@
 </h1>
 
 <p align="center">
-  <strong>Proxy it. No wait,  mock it!!!</strong><br />
-  <strong>Just delicious when testing and developing</strong><br />
+  <strong>Proxy it. No wait,  mock it!</strong><br />
+  <strong>Just delicious when testing and developing.</strong><br />
   <span>Relies on <a href="https://github.com/http-party/node-http-proxy">
     node-http-proxy</a> and <a href="https://nodejs.org/api/http.html">
     node http api
@@ -35,21 +35,21 @@ npm install warp-proxy --save-dev # only accessible via npm package.json command
 
 ## Usage
 ```bash
-# Proxing all requests to a remote server
+# Proxying all requests to a remote server
 warp-proxy web --port 6543 --target http://mydesiredserver:1234 
 
-# Proxing all request to local json files
+# Proxying all request to local json files
 warp-proxy mock --port 6543 --directory ./mymocksfolder/
 
 # Using a config.js file
 warp-proxy run --config ./proxy-config.js
 
-# Using npx, you don't even need to install the package
+# Using npx you don't even need to install the package
 npx warp-proxy start --port 6543 --target http://mydesiredserver:1234
 ```
 
 ## Configuration
-Using the `run` command you can pass a custom configuration via `--config` argument.
+When using the `run` command you can pass a custom configuration via the `--config` argument.
 
 ```js
 module.exports = {
@@ -64,7 +64,7 @@ module.exports = {
 }
 ```
 
-## Proxying web target
+## Proxying a web target
 Relies on all properties from [node-http-proxy](https://github.com/http-party/node-http-proxy#options)
 
 Feel free to extend your config file with any property from `node-http-proxy`
@@ -78,14 +78,16 @@ module.exports = {
 ```
 
 ## Proxying local files
-Mocking the following request and having the directory like `--directory ./root/`
+Assuming your directory is: `--directory ./root/`
+
+To mock the following request: 
 ```c#
 [GET] http://address:1234/repositories/administrators/1234?param=value
 └───────────────────────┘ └──────────┘ └────────────┘ └──────────────┘
    root folder + /GET/   |   FOLDER   |    FOLDER    |    JSON FILE
 ```
 
-Your folder structure should look like this
+your folder structure should look like this
 ```bash
 └─root
   └─GET
@@ -94,7 +96,10 @@ Your folder structure should look like this
         └─1234?param=value.json
 ```
 
-in second example
+
+
+
+Here's a second example:
 ```c#
 [PUT] http://address:1234/language/countries/`
 └───────────────────────┘ └──────┘ └───────┘
