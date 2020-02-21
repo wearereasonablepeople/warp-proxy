@@ -1,10 +1,10 @@
 {
   "name": "warp-proxy",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Proxy requests or return mocks from local files instead",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",

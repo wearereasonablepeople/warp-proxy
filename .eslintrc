@@ -5,9 +5,10 @@
     "no-console": "off"
   },
   "overrides": [{
-     "files": ["cli.js"],
+    "files": ["lib/cli.js"],
     "rules": {
-      "no-unused-expressions": "off"
+      "no-unused-expressions": "off",
+      "global-require": "warn"
     }
   }]
 }
