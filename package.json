@@ -4,7 +4,7 @@
   "description": "Proxy requests or return mocks from local files instead",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "eslint ."
   },
   "repository": {
     "type": "git",

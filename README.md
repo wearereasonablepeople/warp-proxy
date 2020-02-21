@@ -13,11 +13,15 @@
   </a></span>
 </p>
 
+<p align="center">
+  <img src="docs/cli.png" alt="Cli" />
+</p>
+
 ## Description
 A simple command line to quickly start a web server which proxys your requests to an external server or to local files (JSON).
 Very helpful for testing and development.
 
-Not made to be used in production. Use at your own risk.
+*Not made to be used in production. Use at your own risk.*
 
 ## Getting Started
 
