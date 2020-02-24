@@ -45,7 +45,7 @@ warp-proxy mock --port 6543 --directory ./mymocksfolder/
 warp-proxy run --config ./proxy-config.js
 
 # Using npx you don't even need to install the package
-npx warp-proxy start --port 6543 --target http://mydesiredserver:1234
+npx warp-proxy web --port 6543 --target http://mydesiredserver:1234
 ```
 
 ## Configuration
