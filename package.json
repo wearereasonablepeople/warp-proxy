@@ -1,6 +1,6 @@
 {
   "name": "warp-proxy",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "description": "Proxy requests or return mocks from local files instead",
   "main": "index.js",
   "scripts": {
