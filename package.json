@@ -11,11 +11,14 @@
     "url": "git+https://github.com/wearereasonablepeople/warp-proxy.git"
   },
   "keywords": [
+    "cli",
     "proxy",
     "mock",
     "api",
     "http",
-    "https"
+    "https",
+    "test",
+    "cors"
   ],
   "bin": {
     "warp-proxy": "./lib/cli.js"
