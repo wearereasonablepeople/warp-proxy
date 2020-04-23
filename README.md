@@ -55,6 +55,7 @@ When using the `run` command you can pass a custom configuration via the `--conf
 module.exports = {
   mode: 'web', // or 'mock'
   port: 1234,
+  silent: false,
 
   // Proxying external servers
   target: 'http://mydesiredserver:1234',
