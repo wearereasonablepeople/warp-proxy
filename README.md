@@ -18,7 +18,7 @@
 </p>
 
 ## Description
-A simple command line to quickly start a web server which proxys your requests to an external server or to local files (JSON).
+A simple command line to quickly start a web server which proxys your requests to an external server, or to local files (JSON).
 Very helpful for testing and development.
 
 *Not made to be used in production. Use at your own risk.*
@@ -47,6 +47,37 @@ warp-proxy run --config ./proxy-config.js
 # Using npx you don't even need to install the package
 npx warp-proxy web --port 6543 --target http://mydesiredserver:1234
 ```
+
+### Web
+
+The web mode listens to a port on your local machine and sends all requests to a specified remote server.
+
+| Argument | Required? | Description | Default |
+|----------|-----------|-------------|---------|
+| --port / -p | true | Port to be used by the local server | - |
+| --target / -t | true | Address of the server to send your requests | - |
+
+### Mock
+
+The mock mode to a port on your local machine and serves a mock directory of JSON files.
+
+| Argument | Required? | Description | Default |
+|----------|-----------|-------------|---------|
+| --port / -p | true | Port to be used by the local server | - |
+| --directory / -d | true | Directory to read the mock files | - |
+| --fileExtension / -fe | false | File exntesion of the mock files | `json` |
+| --keepExtensions / -ke | false | If the request ends with a file extension, use it instead | `true` |
+| --slowMode / -sm | Applies a random delay between 0 and 7s to the response | `false` |
+
+### Run Configuration
+
+The run mode allows for running `warp-proxy` with a configuration script written in JS.
+
+| Argument | Required? | Description | Default |
+|----------|-----------|-------------|---------|
+| --config / -c | true | Path to the JavaScript configuration file | - |
+
+👇 The format and options of the configuration script are described below in the [Configuration](#Configuration) section.
 
 ## Configuration
 When using the `run` command you can pass a custom configuration via the `--config` argument.
